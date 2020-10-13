@@ -67,11 +67,11 @@ body {
   background-size: 100%;
   background-position: center;
 }
-
+/*Landing Footer */
 .Section1-Footer {
   font-family: "proxima_nova_rgbold", Helvetica;
   font-weight: normal;
-  background-color: #3a3a3a;
+  background-color: #201f1f;
   margin-top: 10rem;
   height: 18rem;
   margin-bottom: 3rem;
@@ -87,7 +87,17 @@ body {
   justify-items: center;
   transform: translate(10px, 54px);
 }
+/* icons */
+.icons1 {
+  color: grey;
+}
 
+.icons2 {
+  color: purple;
+}
+.footer-info {
+  color: grey;
+}
 /*Buttons Section 1 */
 .section1-buttons {
   display: flow-root;
@@ -112,7 +122,50 @@ body {
   background-color: transparent;
   color: white;
 }
-/*Landing Footer */
+/* Section 2 */
+.section2-content {
+  font-family: "proxima_nova_rgbold", Helvetica;
+  font-weight: normal;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Section 3 cards */
+.section3-content {
+  font-family: "proxima_nova_rgbold", Helvetica;
+  font-weight: normal;
+  background-color: #e7e7e7;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+}
+
+.section3-heading {
+  transform: translate(44rem, 0rem);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 60rem;
+  transform: translate(20rem, 2rem);
+}
+
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.grid > article img {
+  width: 20rem;
+  height: 14rem;
+}
+
+.grid .text {
+  padding: 20px;
+  line-height: 30px;
+  background-color: white;
+}
 
 @media (max-width: 600px) {
   .nav > .nav-btn {
