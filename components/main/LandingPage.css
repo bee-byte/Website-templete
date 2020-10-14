@@ -65,7 +65,6 @@ body {
   background-image: url(https://i.postimg.cc/8cryvP42/header-bg.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: center;
 }
 /*Landing Footer */
 .Section1-Footer {
@@ -135,20 +134,22 @@ body {
 .section3-content {
   font-family: "proxima_nova_rgbold", Helvetica;
   font-weight: normal;
-  background-color: #e7e7e7;
+  background-color: rgb(235, 235, 235);
   background-attachment: fixed;
   background-position: center;
   width: 100%;
+  height: 55rem;
 }
 
 .section3-heading {
-  transform: translate(44rem, 0rem);
+  transform: translate(46rem, 5rem);
+  opacity: 0.7;
 }
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 60rem;
-  transform: translate(20rem, 2rem);
+  width: 48rem;
+  transform: translate(26rem, 8rem);
 }
 
 .grid > article {
@@ -157,17 +158,412 @@ body {
 }
 
 .grid > article img {
-  width: 20rem;
-  height: 14rem;
+  width: 16rem;
+  height: 11rem;
+  object-fit: cover;
 }
 
 .grid .text {
   padding: 20px;
-  line-height: 30px;
+  opacity: 0.7;
+  line-height: 19px;
+  text-align: center;
   background-color: white;
 }
+/* Section 4 */
+.section4-content {
+  font-family: "proxima_nova_rgbold", Helvetica;
+  font-weight: normal;
+  background-image: url(https://i.postimg.cc/JnCyGcr8/section4-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 24rem;
+  background-position: center;
+}
+.section4-text {
+  color: rgb(255, 249, 249);
+  padding: 20px;
+  line-height: 19px;
+  text-align: center;
+  transform: translate(0rem, 3rem);
+}
+/*buttons section4 */
 
-@media (max-width: 600px) {
+.section4-buttons {
+  display: flow-root;
+  /* width: 50%; */
+  margin-top: 6rem;
+  margin-left: 41%;
+  margin-right: 25%;
+  color: #ffffff;
+}
+.button3 {
+  height: 3rem;
+  border: black solid;
+  border-radius: 2rem;
+  color: white;
+  background-color: black;
+}
+
+.button4 {
+  height: 3rem;
+  border: white solid;
+  border-radius: 2rem;
+  background-color: transparent;
+  color: white;
+}
+
+/*section 5 */
+
+/*section 5 button */
+
+.button5 {
+  display: flow-root;
+  width: 9%;
+  justify-self: center;
+  color: rgb(151, 49, 151);
+  height: 3rem;
+  border: rgb(151, 49, 151) solid;
+  border-radius: 2rem;
+  background-color: transparent;
+}
+
+.section5-content {
+  font-family: "proxima_nova_rgbold", Helvetica;
+  font-weight: normal;
+  color: black;
+  display: grid;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section5-img {
+  justify-self: center;
+}
+
+/* section 6 */
+.section6-content {
+  background-color: #3a3a3a;
+  font-family: "proxima_nova_rgbold", Helvetica;
+  font-weight: normal;
+}
+.section6-img {
+  height: 6rem;
+  margin: auto;
+}
+.section6-heading {
+  text-align: center;
+  color: white;
+  transform: translate(10px, 34px);
+}
+.section6-cards {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+
+  margin-top: 5rem;
+}
+
+.button6 {
+  display: flow-root;
+  width: 16%;
+  justify-self: center;
+  color: white;
+  height: 3rem;
+  border: rgb(151, 49, 151) solid;
+  border-radius: 2rem;
+  background-color: rgb(151, 49, 151);
+  margin-top: 6rem;
+  margin-left: 41%;
+  margin-right: 25%;
+}
+
+/*section 7 */
+
+.section7-content {
+  background-color: rgb(235, 235, 235);
+  font-family: "proxima_nova_rgbold", Helvetica;
+  font-weight: normal;
+}
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  margin: 0 30px;
+}
+
+.profile-card {
+  flex: 1 1 30%;
+  max-width: 300px;
+
+  padding: 20px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.profile-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px -5px #ccc;
+}
+
+.profile-icon {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  /* border-radius: 50%; */
+}
+
+.profile-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 25px 0 10px 0;
+}
+
+.profile-position {
+  font-size: 12px;
+  color: #777;
+  text-align: center;
+}
+
+.button {
+  margin: 40px 0 0 0;
+  display: flow-root;
+  width: 57%;
+  text-align: center;
+  color: rgb(151, 49, 151);
+  height: 3rem;
+  border: rgb(151, 49, 151) solid;
+  border-radius: 2rem;
+  background-color: transparent;
+  text-decoration: none;
+}
+.section7-heading {
+  text-align: center;
+  transform: translate(10px, 54px);
+}
+.button:hover {
+  color: #fff;
+  background: #748dff;
+  border: 1px solid #748dff;
+}
+/* Section 8 */
+
+.section8-content {
+  font-family: "proxima_nova_rgbold", Helvetica;
+  font-weight: normal;
+  background-color: white;
+  height: 30rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.section8-img {
+  width: 65%;
+  margin: auto;
+}
+.section8-text {
+  margin: auto;
+}
+
+.button8 {
+  width: 20%;
+  text-align: center;
+  color: rgb(151, 49, 151);
+  height: 3rem;
+  border: rgb(151, 49, 151) solid;
+  border-radius: 2rem;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* section 9*/
+.section9-content {
+  font-family: "proxima_nova_rgbold", Helvetica;
+  font-weight: normal;
+  background-image: url(https://i.postimg.cc/hjqg7yTM/seperator2.jpg);
+  color: white;
+  height: 23rem;
+}
+.section9-text {
+  text-align: center;
+  transform: translate(10px, 20px);
+}
+.icon-group {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  margin-top: 6rem;
+}
+/*section 10 */
+.section10-content {
+  font-family: "proxima_nova_rgbold", Helvetica;
+  font-weight: normal;
+  background-color: white;
+  height: 30rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section10-text {
+  color: black;
+  margin: auto;
+  margin-left: 2rem;
+}
+
+.section10-img {
+  margin: auto;
+}
+.section img {
+  width: 100%;
+}
+
+.button9 {
+  width: 20%;
+  text-align: center;
+  color: rgb(151, 49, 151);
+  height: 3rem;
+  border: rgb(151, 49, 151) solid;
+  border-radius: 2rem;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* section 11 */
+
+.section11-content {
+  background-color: rgb(235, 235, 235);
+  font-family: "proxima_nova_rgbold", Helvetica;
+  font-weight: normal;
+}
+.section11-content h2 {
+  color: black;
+  text-align: center;
+  transform: translate(10px, 25px);
+}
+.profile-icon {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+.profile-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  margin: 25px 0 10px 0;
+}
+.button11 {
+  margin: 40px 0 0 0;
+  padding: 10px 30px;
+  color: #999;
+  text-decoration: none;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+
+.button11:hover {
+  color: #fff;
+  background: #748dff;
+  border: 1px solid #748dff;
+}
+/*section 12*/
+
+.section12-heading {
+  color: black;
+  text-align: center;
+}
+.section12-content {
+  font-family: "proxima_nova_rgbold", Helvetica;
+  font-weight: normal;
+}
+.columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  padding: 8px;
+}
+
+.price {
+  max-height: 25rem;
+  width: 80%;
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.price .header {
+  background-color: rgb(151, 49, 151);
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  color: black;
+  text-align: center;
+}
+
+.price .purple {
+  background-color: rgb(151, 49, 151);
+  font-size: 20px;
+}
+
+.button12 {
+  width: 20%;
+  text-align: center;
+  color: rgb(151, 49, 151);
+  height: 3rem;
+  border: rgb(151, 49, 151) solid;
+  border-radius: 2rem;
+  background-color: transparent;
+  text-decoration: none;
+}
+/*section 13 */
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+/* @media screen and (max-width: 1000px) {
+  .profile-name {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .profile-card {
+    padding: 20px 15px;
+  }
+
+  .profile-name {
+    font-size: 16px;
+  }
+} */
+/* @media screen and (max-width: 1000px) {
+  .profile-name {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .profile-card {
+    padding: 20px 15px;
+  }
+
+  .profile-name {
+    font-size: 16px;
+  }
+} */
+/* @media (max-width: 600px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -212,4 +608,4 @@ body {
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
-}
+} */
